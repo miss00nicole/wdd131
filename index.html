@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Nicole Matanga">
     <meta name="author" content="Nicole Matanga">
     <title>WDD 131 - Dynamic Web Fundamentals</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <span id="course-title">WDD 131  Dynamic Web Fundamentals</span>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
             <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
             <a href="#">I-Learn</a>
@@ -23,19 +23,35 @@
         </nav>
     </header>
     <main>
-        <section class="card">
+    
+        <section class="card about-card">
             <h2>About Me</h2>
-            <img src="images/missnicole.jpg" alt="Nicole Matanga portrait">
-            <p>My name is Nicole Matanga, I am a 18 year old girl, born in South Africa and currently living in England. I am a member of The Church of Jesus Christ of Latter-day Saints. I enjoy learning new skills, exploring web development and spending time with my family. l love listening to music on a daily basis also chatting with the people, l love most. I am a big sister to my two younger sibilings. l am also grateful to be studying through BYU, its the greatest blessing in my life.</p>
+            <div class="about-row">
+                <p>My name is Nicole Matanga. I am an 18 year old girl living with my parents aznd my two younger sibilings.I was born in South Africa, but l am currently living in England. I am a member of The Church of Jesus Christ of Latter-day Saints. I enjoy learning new skills, exploring web development and spending time with my family. l enjoy listening to music on a daily basis and also talking to friends and family</p>
+                <img src="images/missnicole.jpg" alt="Nicole Matanga portrait">
+            </div>
+            <hr>
+            <h3>England, United Kingdom</h3>
+            <div class="country-row">
+                <img src="images/profile.jpg" alt="The london BRIDGE the United Kingdom">
+                <p>England is part of the United Kingdom in north-western Europe, famous for its long history, historic landmarks, literature and diverse communities.</p>
+            </div>
         </section>
-        <section class="card">
-            <h2>England, United Kingdom</h2>
-            <img src="images/profile.jpg" alt="United Kingdom flag">
-            <p>The United Kingdom is a country in north‑western Europe made up of England, Scotland, Wales and Northern Ireland. England is known for its rich history, historic landmarks, literature and diverse communities.</p>
+        
+        <section class="card resources-card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://picsum.photos/" target="_blank">Lorem Picsum Image Placeholder</a></li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Nicole Matanga | England, United Kingdom</p>
+        <p>©<span id="currentyear"></span> Nicole Matanga 📍 England, United Kingdom</p>
         <p id="lastModified"></p>
     </footer>
 </body>

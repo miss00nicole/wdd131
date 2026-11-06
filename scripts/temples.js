@@ -1,10 +1,7 @@
-const menuBtn = document.getElementById('menuBtn');
-const mainNav = document.getElementById('mainNav');
+const currentYear = document.querySelector('#currentyear');
+const lastModified = document.querySelector('#lastModified');
 
-menuBtn.addEventListener('click', () => {
-    mainNav.classList.toggle('open');
-    menuBtn.textContent = mainNav.classList.contains('open') ? '✕' : '☰';
-});
+const today = new Date();
+currentYear.textContent = today.getFullYear();
 
-document.getElementById('copyrightYear').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
+lastModified.textContent = `Last Modified: ${document.lastModified}`;

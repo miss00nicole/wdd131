@@ -1,13 +1,15 @@
-#menuBtn {
+#hamburgerBtn {
     display: none;
 }
-#mainNav {
+
+#primaryNav {
     display: flex;
     position: static;
     flex-direction: row;
-    gap: 1.2rem;
+    gap: 1.4rem;
     padding: 0;
 }
+
 .temple-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }

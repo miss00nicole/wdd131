@@ -1,5 +1,6 @@
-#hamburgerBtn {
-    display: none;
+@media (min-width: 64rem){
+    #hamburgerBtn {
+        display: none;
 }
 
 #primaryNav {
@@ -12,4 +13,5 @@
 
 .temple-grid {
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
 }

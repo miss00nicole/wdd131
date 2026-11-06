@@ -1,0 +1,13 @@
+#menuBtn {
+    display: none;
+}
+#mainNav {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    gap: 1.2rem;
+    padding: 0;
+}
+.temple-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}

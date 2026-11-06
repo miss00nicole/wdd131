@@ -1,7 +1,5 @@
-const currentYear = document.querySelector('#currentyear');
-const lastModified = document.querySelector('#lastModified');
+// Dynamic copyright year
+document.getElementById("copyrightYear").textContent = new Date().getFullYear();
 
-const today = new Date();
-currentYear.textContent = today.getFullYear();
-
-lastModified.textContent = `Last Modified: ${document.lastModified}`;
+// Dynamic last modified date
+document.getElementById("lastModifiedDate").textContent = document.lastModified;

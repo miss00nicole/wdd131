@@ -27,7 +27,7 @@ header {
 }
 
 #primaryNav {
-    display: flex;
+    display: none;
     position: absolute;
     top: 72px;
     left: 0;

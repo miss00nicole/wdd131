@@ -1,17 +1,17 @@
-@media (min-width: 64rem){
+@media (min-width: 64rem) {
     #hamburgerBtn {
         display: none;
-}
+    }
 
-#primaryNav {
-    display: flex;
-    position: static;
-    flex-direction: row;
-    gap: 1.4rem;
-    padding: 0;
-}
+    #primaryNav {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        gap: 1.4rem;
+        padding: 0;
+    }
 
-.temple-grid {
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-}
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
 }

@@ -1,0 +1,246 @@
+
+/* GLOBAL CSS VARIABLES */
+
+:root {
+    --swiss-red: #d52b1e;
+    --deep-red: #a51f18;
+    --ink: #202124;
+    --paper: #fffdfb;
+    --soft-gray: #f2f2f2;
+    --card-shadow: 0 4px 18px rgb(0 0 0 / 18%);
+    --content-width: 1200px;
+}
+
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--soft-gray);
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+}
+
+/* HEADER */
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 112px;
+    padding: 1rem;
+    color: white;
+    background: var(--swiss-red);
+    border-bottom: 8px solid var(--deep-red);
+}
+
+.site-header h1 {
+    margin: 0;
+    padding: 0.55rem 2.5rem;
+    border: 2px solid white;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+/* HERO IMAGE */
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: var(--content-width);
+    min-height: 680px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #8799a2;
+}
+
+.hero-picture,
+.hero-picture img {
+    display: block;
+    width: 100%;
+    height: 680px;
+}
+
+.hero-picture img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* INFORMATION CARDS */
+
+.info-card {
+    position: absolute;
+    z-index: 1;
+    width: min(290px, 28%);
+    padding: 1.2rem;
+    background: rgb(255 253 251 / 94%);
+    border-top: 6px solid var(--swiss-red);
+    box-shadow: var(--card-shadow);
+}
+
+.info-card h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+    font-size: 1.35rem;
+}
+
+/* DESKTOP WEATHER ICON USING PSEUDO-ELEMENT */
+
+.weather-card h2::after {
+    content: " ☁️";
+    font-size: 1.25em;
+}
+
+/* MOBILE SVG ICON HIDDEN ON DESKTOP */
+
+.weather-icon {
+    display: none;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 0.6rem;
+}
+
+/* DATA */
+
+.data-list {
+    display: grid;
+    gap: 0.65rem;
+    margin: 0;
+}
+
+.data-list div {
+    display: grid;
+    grid-template-columns: minmax(85px, 0.9fr) 1.1fr;
+    gap: 0.5rem;
+    align-items: start;
+}
+
+.data-list dt {
+    font-weight: bold;
+}
+
+.data-list dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* CARD POSITIONS */
+
+.country-data {
+    top: 2rem;
+    left: 2rem;
+}
+
+.weather-card {
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.weather-note {
+    margin: 1rem 0 0;
+    font-size: 0.78rem;
+    line-height: 1.4;
+}
+
+/* FOOTER */
+
+.site-footer {
+    padding: 1.2rem;
+    color: white;
+    background: var(--swiss-red);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.site-footer p {
+    margin: 0.25rem;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        min-height: 88px;
+    }
+
+    .site-header h1 {
+        width: 90%;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        overflow: visible;
+        background: var(--soft-gray);
+    }
+
+    .hero-picture,
+    .hero-picture img {
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        aspect-ratio: 4 / 3;
+    }
+
+    .hero-picture img {
+        object-fit: cover;
+    }
+
+    .info-card {
+        position: static;
+        width: auto;
+        margin: 1rem;
+        padding: 1.2rem;
+    }
+
+    .country-data {
+        margin-top: 1rem;
+    }
+
+    .weather-card {
+        margin-top: 0;
+    }
+
+    /* MOBILE USES SVG INSTEAD OF EMOJI */
+
+    .weather-card h2::after {
+        content: none;
+    }
+
+    .weather-icon {
+        display: block;
+    }
+
+    .data-list div {
+        grid-template-columns: minmax(110px, 0.8fr) 1.2fr;
+    }
+}
+
+/* TABLET VIEW */
+
+@media (min-width: 701px) and (max-width: 950px) {
+
+    .info-card {
+        width: 31%;
+        padding: 1rem;
+    }
+
+    .country-data {
+        left: 1rem;
+    }
+
+    .weather-card {
+        right: 1rem;
+    }
+}

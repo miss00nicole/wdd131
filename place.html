@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Switzerland, its beautiful mountains, culture and weather.">
+    <meta name="author" content="Nicole Matanga">
+
+    <title>Switzerland | Discover the Place</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Switzerland</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <picture class="hero-picture">
+                <source
+                    media="(max-width: 600px)"
+                    srcset="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=700&q=80&fm=webp">
+
+                <source
+                    media="(min-width: 601px)"
+                    srcset="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1800&q=85&fm=webp">
+
+                <img
+                    src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80&fm=webp"
+                    alt="Beautiful Swiss alpine landscape"
+                    width="1800"
+                    height="1200">
+            </picture>
+
+            <section class="info-card country-data">
+                <h2>Switzerland at a Glance</h2>
+
+                <dl class="data-list">
+                    <div>
+                        <dt>Capital</dt>
+                        <dd>Bern</dd>
+                    </div>
+
+                    <div>
+                        <dt>Population</dt>
+                        <dd>About 9 million</dd>
+                    </div>
+
+                    <div>
+                        <dt>Area</dt>
+                        <dd>41,285 km²</dd>
+                    </div>
+
+                    <div>
+                        <dt>Languages</dt>
+                        <dd>German, French, Italian and Romansh</dd>
+                    </div>
+
+                    <div>
+                        <dt>Currency</dt>
+                        <dd>Swiss franc (CHF)</dd>
+                    </div>
+
+                    <div>
+                        <dt>Highest point</dt>
+                        <dd>Dufourspitze, 4,634 m</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="info-card weather-card">
+                <h2>Weather</h2>
+
+                <img
+                    class="weather-icon"
+                    src="images/cloud.svg"
+                    alt=""
+                    width="48"
+                    height="48">
+
+                <dl class="data-list">
+                    <div>
+                        <dt>Location</dt>
+                        <dd>Zurich</dd>
+                    </div>
+
+                    <div>
+                        <dt>Condition</dt>
+                        <dd>Cloudy</dd>
+                    </div>
+
+                    <div>
+                        <dt>Temperature</dt>
+                        <dd><span id="temperature">2</span> °C</dd>
+                    </div>
+
+                    <div>
+                        <dt>Wind speed</dt>
+                        <dd><span id="wind-speed">12</span> km/h</dd>
+                    </div>
+
+                    <div>
+                        <dt>Wind chill</dt>
+                        <dd><span id="wind-chill">Calculating...</span></dd>
+                    </div>
+                </dl>
+
+                <p class="weather-note">
+                    Sample weather information for Zurich.
+                </p>
+            </section>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            © <span id="current-year"></span>
+            🦋Nicole Matanga🦋 | Switzerland
+        </p>
+
+        <p>
+            Last modified:
+            <time id="last-modified"></time>
+        </p>
+    </footer>
+
+</body>
+</html>

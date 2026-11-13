@@ -2,8 +2,8 @@
 /* GLOBAL CSS VARIABLES */
 
 :root {
-    --swiss-red: #0a7021;
-    --deep-red: #39c262;
+    --swiss-red: #d52b1e;
+    --deep-red: #8b1111;
     --ink: #202124;
     --paper: #fffdfb;
     --soft-gray: #f2f2f2;
@@ -242,5 +242,19 @@ body {
 
     .weather-card {
         right: 1rem;
-    }
+
+    }.visually-hidden {
+
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+}
+
+
 }

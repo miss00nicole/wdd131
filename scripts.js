@@ -46,7 +46,8 @@ if (productSelect) {
 const lastModified = document.querySelector("#lastModified");
 
 if (lastModified) {
-    lastModified.textContent = document.lastModified;
+    const modifiedDate = new Date(document.lastModified);
+    lastModified.textContent = modifiedDate.toLocaleString();
 }
 
 // Review Confirmation Page
@@ -54,7 +55,12 @@ const reviewCountElement = document.querySelector("#reviewCount");
 
 if (reviewCountElement) {
 
-    // Get submitted form information
+    // Get submitted form // Display Last Modified Date
+const lastModified = document.querySelector("#lastModified");
+
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}information
     const params = new URLSearchParams(window.location.search);
 
     const product = params.get("productName");

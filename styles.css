@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-    background-color: #3f2905;
+    background-color: #241044;
     color: white;
     text-align: center;
     padding: 25px 15px;
@@ -47,7 +47,7 @@ legend {
     display: block;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #3f2905;
+    color: #241044;
 }
 
 input[type="text"],
@@ -69,8 +69,8 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 2px solid #d6ad43;
-    border-color: #ecd44c;
+    outline: 2px solid #7652a8;
+    border-color: #7652a8;
 }
 
 /* Rating */
@@ -86,7 +86,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #3f2905;
+    color: #241044;
 }
 
 .rating-options span {
@@ -129,7 +129,7 @@ textarea:focus {
 .submit-btn {
     width: 100%;
     padding: 14px;
-    background-color: #3f2905;
+    background-color: #241044;
     color: white;
     border: none;
     border-radius: 5px;
@@ -139,7 +139,7 @@ textarea:focus {
 }
 
 .submit-btn:hover {
-    background-color: #3f2905;
+    background-color: #54317e;
 }
 
 /* Confirmation Page */
@@ -148,7 +148,7 @@ textarea:focus {
 }
 
 .confirmation h2 {
-    color: #e5a000;
+    color: #241044;
     margin-bottom: 15px;
 }
 
@@ -161,7 +161,7 @@ textarea:focus {
 }
 
 .review-details h3 {
-    color: #ecd44c;
+    color: #241044;
     margin-bottom: 15px;
 }
 
@@ -184,13 +184,13 @@ textarea:focus {
 .count {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ecd44c;
+    color: #241044;
 }
 
 /* Back Button */
 .back-btn {
     display: inline-block;
-    background-color: #3f2905;
+    background-color: #241044;
     color: white;
     text-decoration: none;
     padding: 12px 25px;
@@ -199,12 +199,12 @@ textarea:focus {
 }
 
 .back-btn:hover {
-    background-color: #3f2905;
+    background-color: #54317e;
 }
 
 /* Footer */
 footer {
-    background-color: #3f2905;
+    background-color: #241044;
     color: white;
     text-align: center;
     padding: 20px;

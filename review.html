@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review confirmation">
+    <meta name="author" content="Nicole Matanga">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main class="confirmation">
+        <h2>Review Successfully Submitted!</h2>
+
+        <p>Thank you for taking the time to review our product.</p>
+
+        <section class="review-details">
+            <h3>Your Review Details</h3>
+
+            <p><strong>Product:</strong>
+                <span id="displayProduct"></span></p>
+
+            <p><strong>Rating:</strong>
+                <span id="displayRating"></span></p>
+
+            <p><strong>Installation Date:</strong>
+                <span id="displayDate"></span></p>
+
+            <p><strong>Useful Features:</strong>
+                <span id="displayFeatures"></span></p>
+
+            <p><strong>Written Review:</strong>
+                <span id="displayReview"></span></p>
+
+            <p><strong>Your Name:</strong>
+                <span id="displayName"></span></p>
+        </section>
+
+        <section class="counter">
+            <h3>Review Statistics</h3>
+            <p>You have completed</p>
+            <p class="count">
+                <span id="reviewCount">0</span>
+            </p>
+            <p>Product Reviews!</p>
+        </section>
+
+        <a href="form.html" class="back-btn">
+            Submit Another Review
+        </a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Product Review Form</p>
+        <p>WDD 131 - Dynamic Web Fundamentals</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
